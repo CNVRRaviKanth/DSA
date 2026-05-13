@@ -3,7 +3,7 @@ def two_sum(arr,target):
     for i in range(len(arr)):
         complement = target-arr[i]
         if complement in hashmap:
-            return "pair found"
+            return [hashmap[complement,i]]
         
         hashmap[arr[i]] = i
 
