@@ -10,10 +10,11 @@ def kadanes_algorithm(arr):
     res = arr[0]
     
     for i in range(1,len(arr)):
-        ## if it is a positive no. then maxEnding+arr[i], if it is a negative no, then it is arr[i]
         
         maxEnding = max(maxEnding+arr[i],arr[i])  
 
+        ## if it is a positive no. then maxEnding, if it is a negative no, then we will simply keep the previous result only.
+        
         ## updating the new maximum subarray sum.
         res = max(maxEnding,res)
 
