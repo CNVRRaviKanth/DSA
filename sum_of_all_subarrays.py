@@ -1,3 +1,5 @@
+## make use of two for loop where the inner for loop runs from i to n
+
 def sum_of_all_subarrays(arr):
     result = 0
     for i in range(len(arr)):
